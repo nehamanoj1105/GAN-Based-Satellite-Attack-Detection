@@ -1,4 +1,4 @@
-# SAT-GUARD
+# NOVA-GUARD
 
 Physics-Aware Synthetic Cyber-Physical Attack Generation and Anomaly Detection in Satellite Telemetry
 
@@ -6,7 +6,7 @@ Physics-Aware Synthetic Cyber-Physical Attack Generation and Anomaly Detection i
 
 ## Overview
 
-SAT-GUARD is an end-to-end framework for detecting stealthy cyber-physical attacks in satellite telemetry systems. The system combines a physics-constrained conditional generative adversarial network (GAN) for synthetic attack generation with an autoencoder-based anomaly detector, wrapped in a production-grade Model Context Protocol (MCP) architecture with agentic AI reasoning.
+NOVA-GUARD is an end-to-end framework for detecting stealthy cyber-physical attacks in satellite telemetry systems. The system combines a physics-constrained conditional generative adversarial network (GAN) for synthetic attack generation with an autoencoder-based anomaly detector, wrapped in a production-grade Model Context Protocol (MCP) architecture with agentic AI reasoning.
 
 The framework addresses two critical challenges in spacecraft cybersecurity: the absence of labelled attack data for supervised training, and the difficulty of detecting coordinated multi-channel anomalies that evade conventional threshold-based monitors.
 
