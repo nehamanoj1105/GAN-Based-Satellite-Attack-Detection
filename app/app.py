@@ -22,14 +22,14 @@ uploaded = st.file_uploader("Upload CSV", type=["csv"])
 if uploaded:
     df = pd.read_csv(uploaded)
 
-    st.subheader("📊 Data Preview")
+    st.subheader("Data Preview")
     st.dataframe(df.head())
 
-    if st.button("🚀 Run Detection"):
+    if st.button("Run Detection"):
         try:
             result = run_detection(df)
 
-            st.subheader("📈 Detection Results")
+            st.subheader("Detection Results")
 
             col1, col2, col3 = st.columns(3)
             col1.metric("Max Error", round(result["max_reconstruction_error"], 4))
@@ -37,9 +37,9 @@ if uploaded:
             col3.metric("Threshold", round(result["threshold"], 4))
 
             if result["is_anomaly"]:
-                st.error("🚨 ANOMALY DETECTED")
+                st.error("ANOMALY DETECTED")
             else:
-                st.success("✅ NORMAL")
+                st.success("NORMAL")
 
             # -----------------------------
             # GRAPH
